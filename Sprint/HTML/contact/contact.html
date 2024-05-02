@@ -3,57 +3,88 @@
 <head>
 <title>Contact Us</title>
 <style>
-    body{
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        margin:0;
-        padding:0;
-    }
-    .container{
-        max-width: 960px;
-        margin: 20px auto;
-        padding: 0 20px;
-    }
-    h1{
-        text-align: center;
-    }
-    .profile{
-        margin-bottom: 30px;
-    }
-    .profile img{
-        max-width:100px;
-        border-radius: 50%;
-        display: block;
-        margin: 0 auto 10px;
-    }
-    .profile h2{
-        text-align:center;
-    }
-    .profile p{
-        text-align: center;
-    }
+        body {
+            font-family: Georgia, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #E3E2DF;
+         	  color: #000;
+        }
+        header {
+            background-color: #E3AFBC;
+            color: #5D001E;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            margin:0;
+            box-sizing: border-box;
+        }
+        .container{
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .profile {
+            width: 45%; /* Adjust the width as needed */
+            text-align: center;
+        }
+        .profile img {
+            max-width: 100px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        .profile h2 {
+            margin-bottom: 5px;
+        }
+        .profile p {
+            margin: 0;
+        }
+        .profile p a {
+            color: blue;
+            text-decoration: underline;
+        }
 </style>
 
 <link rel = "stylesheet" href = "">
 </head>
 
 <body>
-    <div class = "container">
+    <header>
         <h1>Contact Us</h1>
+    </header>
+    <div class = "container">
+        <div class = "row">
         <div class = "profile">
             <h2>Adela</h2>
+            <img src = "https://img.freepik.com/free-psd/freshly-baked-pizza-with-cut-slice-isolated-transparent-background_191095-9041.jpg?size=338&ext=jpg&ga=GA1.1.1224184972.1714608000&semt=sph" alt = "Picture of a food or smth change this!">
             <p>Email:<a href = "mailto:aeccli@seattleu.edu">aeccli@seattleu.edu</a></p>
         </div>
         <div class = "profile">
             <h2>Ivanna</h2>
+            <img src = "https://img.freepik.com/free-psd/freshly-baked-pizza-with-cut-slice-isolated-transparent-background_191095-9041.jpg?size=338&ext=jpg&ga=GA1.1.1224184972.1714608000&semt=sph" alt = "Picture of a food or smth change this!">
             <p>Email:<a href = "mailto:irangel@seattleu.edu">irangel@seattleu.edu</a></p>
         </div>
+        </div>
+        <div class = "row">
         <div class = "profile">
             <h2>Henry</h2>
+            <img src = "https://img.freepik.com/free-psd/freshly-baked-pizza-with-cut-slice-isolated-transparent-background_191095-9041.jpg?size=338&ext=jpg&ga=GA1.1.1224184972.1714608000&semt=sph" alt = "Picture of a food or smth change this!">
             <p>Email:<a href = "mailto:hlai@seattleu.edu">hlai@seattleu.edu</a></p>
         </div>
         <div class = "profile">
             <h2>Moises</h2>
+            <img src = "https://img.freepik.com/free-psd/freshly-baked-pizza-with-cut-slice-isolated-transparent-background_191095-9041.jpg?size=338&ext=jpg&ga=GA1.1.1224184972.1714608000&semt=sph" alt = "Picture of a food or smth change this!">
             <p>Email:<a href = "mailto:mbustos@seattleu.edu">mbustos@seattleu.edu</a></p>
+        </div>
         </div>
     </div>
 </body>
