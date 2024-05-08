@@ -1,1 +1,99 @@
 /* Contact CSS file */
+body {
+    font-family: Georgia, serif; 
+    margin: 0;
+    font-size: 100%;
+    padding: 0;
+    background-color: #E3E2DF;
+     color: #000;
+    min-height: 100vh;
+    position: relative;
+}
+header {
+    background-color: #E3AFBC;
+    color: #5D001E;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin:0;
+    box-sizing: border-box;
+}
+header nav{
+    margin-top: 10px;
+}
+header nav a{
+    margin-left: 15px;
+    color: #5D001E;
+    text-decoration: none;
+    font-weight: bold;
+}
+header nav a:hover,.profile p a:hover{
+    color:#923754;
+}
+.container{
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+h1 {
+    text-align: center;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.profile {
+    width: 45%; /* Adjust the width as needed */
+    text-align: center;
+    background-color: #F0F0F0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 160px 320px rbga(0,0,0,0);
+    margin-bottom:  20px;
+}
+.profile img {
+    max-width: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px;
+}
+.profile h2 {
+    margin-bottom: 5px;
+    color: #5D001E; /*NOT SURE WHAT COLOR WE WANT HERE!!*/
+}
+.profile p {
+    margin: 0;
+}
+a{
+    text-decoration:none;
+    color: #5D001E;
+}
+footer {
+    background-color: #E3AFBC;
+    color: #5D001E;
+    position:absolute;
+    bottom:0;
+    left:0;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin:0;
+    box-sizing: border-box;
+    border-color: #5D001E;
+    border-width: 10px;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom:10px; /*Space between image and text*/
+}
+footer ul a{
+    margin: 0  1.25%;
+    text-decoration: none;
+    color: #5D001E;
+}
+footer ul a:hover{
+    text-decoration: underline;
+    color: #923754
+}

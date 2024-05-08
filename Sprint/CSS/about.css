@@ -1,1 +1,62 @@
 /* About CSS file */
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E3E2DF;
+    color: #000;
+    padding-bottom: 100px; /* Add padding to make space for the footer */
+}
+header {
+    background-color: #E3AFBC;
+    color: #5D001E;
+    padding: 20px;
+    text-align: center;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.photo {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.photo img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.photo p {
+    font-style: italic;
+    color: #123C69;
+}
+/* Footer */
+footer {
+    background-color: #E3AFBC;
+    color: #5D001E;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    border-color: #5D001E;
+    border-width: 10px;
+}
+footer ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; /* Space between image and text */
+}
+footer ul a {
+    margin: 0 1.25%;
+    text-decoration: none;
+    color: #5D001E;
+}
+footer ul a:hover {
+    text-decoration: underline;
+    color: #923754;
+}
