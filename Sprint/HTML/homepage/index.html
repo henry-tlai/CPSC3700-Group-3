@@ -5,6 +5,39 @@
 	<meta charset="UTF-8">
 	<title>Homepage</title>
 	<link rel = "stylesheet" href = "../../CSS/style.css">
+	<!----style for carousel---->
+	<style>
+		.carousel-container{
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.carousel{
+			display: flex;
+			transition: transform 0.5s ease;
+		}
+		.carousel-item{
+			flex: 0 0 100%;
+		}
+		.carousel-button{
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 40px;
+			height: 40px;
+			background-color: rgba(0, 0, 0, 0.5);
+			color: white;
+			border: none;
+			cursor:  pointer;
+		}
+		.carousel-button.prev{
+			left: 10px;
+		}
+		.carousel-button.next{
+			right: 10px;
+		}
+	</style>
+	<!----style for carousel---->
 </head> 
 <body>
 <!-----header/navbar----->
@@ -27,7 +60,8 @@
 						<div class="column1">
 							<h1>Seattle</h1>
 							<!--add button -->
-							<a href="../location/location.html"><button class="btn">Food ></button></a>
+							<a href="../location/location.html"><button class="
+												    ">Food ></button></a>
 						</div>
 						<div class="column2">
 							<p> Welcome to Bite Into Seattle! Your ultimate guide to the hidden gems and iconic places to eat that define Seattle's culinary landscape. Whehter you're a local foodie looking for the latest trends or a visitor searching for authentic PNW palates, our reviews and recommendations will have you covered!  </p>
