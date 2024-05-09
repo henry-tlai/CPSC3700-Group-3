@@ -72,6 +72,27 @@
 <!-- Next Section -->
 		</div>
 	</div>
+	<!--review carousel-->
+	<div class="carousel-container">
+		<button class="carousel-button prev" onclick="prevSlide()">Prev</button>
+		<div class="carousel">
+			<div class="carousel-item">
+				<h2>Review 1</h2>
+				<p>This is the first review.</p>
+			</div>
+			<div class="carousel-item">
+				<h2>Review 2</h2>
+				<p>Second review.</p>
+			</div>
+			<div class="carousel-item">
+				<h2>Review 3</h2>
+				<p>Third review.</p>
+			</div>
+			<!--add more reviews if wanted-->
+		</div>
+		<button class="carousel-button next" onclick="nextSlide()">Next</button>
+	</div>
+	<!--review carousel-->
 <!-----footer----->
 	<footer>
 		<ul>
@@ -84,6 +105,26 @@
     	<img src="img/mahi3.jpeg" width="30" height="auto" alt="Image"> <!-- Adjust the width and height attributes -->
         <p> © 2024 Bite Into Seattle. All Rights Reserved. </p>
 	</footer>
+	<script>
+		const carousel = document.querySelector('.carousel');
+		const carouselItems = document.querySelectorAll('.carousel-item');
+		const totalItems = carouselItems.length;
+		let currentIndex = 0;
+
+		function showSlide(index) {
+            		carousel.style.transform = `translateX(-${index * 100}%)`;
+        	}
+
+        	function nextSlide() {
+            		currentIndex = (currentIndex + 1) % totalItems;
+            	showSlide(currentIndex);
+        	}
+
+        	function prevSlide() {
+           		currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+            	showSlide(currentIndex);
+        	}	
+	</script>
 </body>
 </html>
 </html>
