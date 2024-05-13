@@ -1,1 +1,29 @@
 /* Review CSS file */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.review {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+.review h2 {
+    margin-top: 0;
+}
+.review p {
+    margin-bottom: 0;
+}
+.review a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
