@@ -1,5 +1,5 @@
 // Fetch the JSON data
-fetch('../JavaScript/mapdata.json')
+fetch('../../JavaScript/mapdata.json')
     .then(response => response.json())
     .then(data => {
         // Extract latitudes and longitudes from the JSON data
