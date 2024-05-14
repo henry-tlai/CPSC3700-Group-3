@@ -1,0 +1,20 @@
+[
+    {"lat": "47.6097", "lon": "-122.3331", "text": "The coffee bar"},
+    {"lat": "47.6137", "lon": "-122.3145", "text": "Bistro Bohem"},
+    {"lat": "47.6189", "lon": "-122.3215", "text": "Black Cat"},
+    {"lat": "47.6080", "lon": "-122.3352", "text": "Snap"},
+    {"lat": "47.6129", "lon": "-122.3182", "text": "Columbia Heights Coffee"},
+    {"lat": "47.6149", "lon": "-122.3280", "text": "Azi's Cafe"},
+    {"lat": "47.6195", "lon": "-122.3240", "text": "Blind Dog Cafe"},
+    {"lat": "47.6151", "lon": "-122.3306", "text": "Le Caprice"},
+    {"lat": "47.6094", "lon": "-122.3255", "text": "Filter"},
+    {"lat": "47.6149", "lon": "-122.3285", "text": "Peregrine"},
+    {"lat": "47.6144", "lon": "-122.3283", "text": "Tryst"},
+    {"lat": "47.6138", "lon": "-122.3207", "text": "The Coupe"},
+    {"lat": "47.6152", "lon": "-122.3187", "text": "Big Bear Cafe"},
+    {
+        "lat": "47.65672499646367",
+        "lon": "-122.3385113985433",
+        "text": "Seattle, WA"
+    }
+]
