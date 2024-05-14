@@ -16,7 +16,7 @@ header {
     text-align: center;
 }
 .container {
-    max-width: 90%;
+    max-width: 96%;
     margin: 20px auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
