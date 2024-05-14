@@ -13,7 +13,25 @@ header {
     background-color: #ffffff;
     color: #000000;
     padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    display:flex;
+    align-items: center;
+}
+.logo{
+    margin-right: auto;
+}
+.links{
+    display:flex;
+    justify-content: flex-end;
+}
+nav a {
+    margin-left:20px;
+    text-decoration: none;
+    color:#000000;
 }
 .container {
     max-width: 96%;
