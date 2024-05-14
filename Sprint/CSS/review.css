@@ -66,6 +66,12 @@ header {
 .review:hover .overlay{
     opacity: 1;
 }
+.review .overlay-content{
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
 /* Footer */
 footer {
     background-color: #E3AFBC;
