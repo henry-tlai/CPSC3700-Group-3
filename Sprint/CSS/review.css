@@ -24,7 +24,7 @@ header {
 }
 .review {
     position: relative;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     overflow: hidden;
 }
 .review h2, .review p, .review a {
@@ -34,7 +34,7 @@ header {
 }
 .review a {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     background-color: #333;
     padding: 10px 20px;
