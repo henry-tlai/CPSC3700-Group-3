@@ -1,7 +1,7 @@
 /* Review CSS file */
 @font-face {
     font-family: 'CustomFont';
-    src: url('../fonts/MarineParadeDemoRegular.ttf') format('truetype');
+    src: url('../fonts/PlayfairDisplaySC-Regular.otf') format('truetype');
 }
 body {
     font-family: 'CustomFont', serif;
