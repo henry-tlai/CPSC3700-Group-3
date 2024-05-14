@@ -67,7 +67,7 @@ header {
     opacity: 1;
 }
 .review .overlay-content{
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     padding: 10px;
     border-radius: 5px;
     text-align: center;
