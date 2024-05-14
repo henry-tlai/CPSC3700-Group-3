@@ -7,11 +7,11 @@ body {
     font-family: 'CustomFont', serif;
     margin: 0;
     padding: 0;
-    background-color: #E3E2DF;
+    background-color: #ffffff;
 }
 header {
-    background-color: #E3AFBC;
-    color: #5D001E;
+    background-color: #ffffff;
+    color: #000000;
     padding: 20px;
     text-align: center;
 }
@@ -75,12 +75,12 @@ header {
 }
 /* Footer */
 footer {
-    background-color: #E3AFBC;
-    color: #5D001E;
+    background-color: #ffffff;
+    color: #000000;
     padding: 10px;
     text-align: center;
     width: 100%;
     box-sizing: border-box;
-    border-color: #5D001E;
+    border-color: #000000;
     border-width: 10px;
 }
