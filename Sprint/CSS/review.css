@@ -1,8 +1,15 @@
 /* Review CSS file */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia,  serif;
     margin: 0;
     padding: 0;
+    background-color: #E3E2DF;
+}
+header {
+    background-color: #E3AFBC;
+    color: #5D001E;
+    padding: 20px;
+    text-align: center;
 }
 .container {
     max-width: 900px;
@@ -26,4 +33,15 @@ body {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+}
+/* Footer */
+footer {
+    background-color: #E3AFBC;
+    color: #5D001E;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    border-color: #5D001E;
+    border-width: 10px;
 }
