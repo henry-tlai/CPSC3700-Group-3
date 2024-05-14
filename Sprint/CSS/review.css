@@ -16,17 +16,17 @@ header {
     text-align: center;
 }
 .container {
-    max-width: 900px;
+    max-width: 100%;
     margin: 20px auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(calc((100%-40px)/3), 1fr));
     grid-gap: 20px;
 }
 .review {
     position: relative;
     border: 1px solid #ffffff;
     overflow: hidden;
-    height: 300px;
+    padding-top: calc((100%-40px)/3);
 }
 .review h2, .review p, .review a {
     margin: 0;
@@ -43,7 +43,10 @@ header {
     margin-top: 10px;
 }
 .review img{
-    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
