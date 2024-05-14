@@ -1,6 +1,10 @@
 /* Review CSS file */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('MarineParadeDemoRegular.ttf') format('truetype');
+}
 body {
-    font-family: Georgia,  serif;
+    font-family: 'CustomFont', serif;
     margin: 0;
     padding: 0;
     background-color: #E3E2DF;
