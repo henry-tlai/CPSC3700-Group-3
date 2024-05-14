@@ -44,7 +44,19 @@ fetch('../../JavaScript/mapdata.json')
                     enabled:true,
                     size:50,
                     maxZoom: 14
+                },
+                margin: {
+                    t:0,
+                    b:0,
+                    r:0,
+                    l:0
                 }
+            },
+            margin:{
+                t:0,
+                b:0,
+                r:0,
+                l:0  
             }
         };
 
