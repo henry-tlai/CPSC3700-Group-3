@@ -19,13 +19,14 @@ header {
     max-width: 900px;
     margin: 20px auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
 }
 .review {
     position: relative;
-    border: 1px solid #000000;
+    border: 1px solid #ffffff;
     overflow: hidden;
+    height: 200px;
 }
 .review h2, .review p, .review a {
     margin: 0;
