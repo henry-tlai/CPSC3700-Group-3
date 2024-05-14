@@ -1,8 +1,12 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/PoiretOne-Regular.ttf') format('truetype');
+}
 *{
     margin: 0;
     padding: 0;
     /* deciding on font */
-    font-family: Georgia, serif; 
+    font-family: 'CustomFont', serif; 
     box-sizing: border-box;
 }
 body{

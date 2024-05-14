@@ -1,6 +1,10 @@
 /* Contact CSS file */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/PoiretOne-Regular.ttf') format('truetype');
+}
 body {
-    font-family: Georgia, serif; 
+    font-family: 'CustomFont', serif;
     margin: 0;
     font-size: 100%;
     padding: 0;
