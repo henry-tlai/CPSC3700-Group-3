@@ -12,11 +12,38 @@ main {
 }
 footer {
     margin-top: auto;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     padding: 20px;
     text-align: center;
 }
 .left-image {
     float: left;
     margin-right: 20px; /* Adjust as needed */
+}
+header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+}
+h1{
+    margin: 0 auto;
+    max-width: 80%;
+    text-align: center;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin-right: auto;
+}
+.links{
+    display:flex;
+    justify-content: flex-end;
+}
+nav a {
+    margin-left:20px;
+    text-decoration: none;
+    color:#000000;
 }
