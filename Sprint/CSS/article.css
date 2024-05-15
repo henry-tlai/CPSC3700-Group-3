@@ -52,15 +52,16 @@ nav a {
     font-size: 24px;
 }
 .star{
-    color:gold;
+    color:transparent;
+    text-shadow: 0 0 0.5px black;
 }
 .star.filled{
     color: black;
 }
 .star.half-filled {
     position: relative;
-    color: black; /* Color of the half-filled star */
-    overflow: hidden;
+    color: transparent; /* Color of the half-filled star */
+    text-shadow: 0 0 0.5px black;
 }
 
 .star.half-filled::before {
@@ -68,5 +69,5 @@ nav a {
     position: absolute;
     left: 0;
     overflow: hidden;
-    color: gold; /* Color of the half-filled portion */
+    color: rgb(0, 0, 0); /* Color of the half-filled portion */
 }
