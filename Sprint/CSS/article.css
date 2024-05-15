@@ -55,18 +55,10 @@ nav a {
     color:transparent;
     text-shadow: 0 0 0.5px black;
 }
-.star.filled{
-    color: black;
-}
-.star.half-filled {
-    position: relative;
-    color: transparent; /* Color of the half-filled star */
-    text-shadow: 0 0 0.5px black;
+.star.filled {
+    background-image: url('../HTML/reviewarticles/star-half.svg'); /* Path to your SVG file for filled stars */
 }
 
-.star.half-filled::before {
-    content: U+2BE8; /* Unicode character for a half star */
-    position: relative; /* Change from absolute to relative */
-    color: rgb(0, 0, 0); /* Color of the half-filled portion */
-    margin-right: -8px; /* Adjust as needed to align properly */
+.star.half-filled {
+    background-image: url('../HTML/reviewarticles/star-half.svg'); /* Path to your SVG file for half-filled stars */
 }
