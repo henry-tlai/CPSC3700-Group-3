@@ -49,11 +49,10 @@ nav a {
     color:#000000;
 }
 .star-rating{
-    font-size: 18px;
+    font-size: 24px;
 }
 .star{
     color:transparent;
-    text-shadow: 0 0 0.5px black;
 }
 .star.filled {
     background-image: url('../HTML/reviewarticles/img/star-fill.svg'); /* Path to your SVG file for filled stars */
