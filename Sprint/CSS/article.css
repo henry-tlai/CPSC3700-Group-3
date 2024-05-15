@@ -56,9 +56,12 @@ nav a {
     text-shadow: 0 0 0.5px black;
 }
 .star.filled {
-    background-image: url('../HTML/reviewarticles/star-half.svg'); /* Path to your SVG file for filled stars */
+    background-image: url('../HTML/reviewarticles/star-fill.svg'); /* Path to your SVG file for filled stars */
 }
 
 .star.half-filled {
     background-image: url('../HTML/reviewarticles/star-half.svg'); /* Path to your SVG file for half-filled stars */
+}
+.star.not-filled{
+    background-image: url('../HTML/reviewarticles/star.svg');
 }
