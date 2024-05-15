@@ -65,9 +65,8 @@ nav a {
 }
 
 .star.half-filled::before {
-    content: '\2605'; /* Unicode character for a full star */
-    position: absolute;
-    left: 0;
-    overflow: hidden;
+    content: '½'; /* Unicode character for a half star */
+    position: relative; /* Change from absolute to relative */
     color: rgb(0, 0, 0); /* Color of the half-filled portion */
+    margin-right: -8px; /* Adjust as needed to align properly */
 }
