@@ -40,7 +40,30 @@ nav ul li a{
     font-size: 18px;
     position: relative;
 }
-/* Section 1: Background Image / Description / Button */
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    margin-top: 20px;
+    font-size: 60px;
+}
+.header .btn{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 4%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+/* Section 1: Background Image / Description / Button 
 #section1{
     padding: 80px 0;
 }
@@ -77,18 +100,12 @@ nav ul li a{
 .column2{
     flex-basis: 65%;
 }
-/*.column2 h2{
-    flex-basis: 65%;
-    margin-top: 20%;
-    font-size: 20px;
-    color: white;
-}*/
 .column2 p{
     flex-basis: 65%;
     margin-top: 15%;
     font-size: 20px;
     color: white;
-}
+} */
 /* Footer */
 footer {
     background-color: #E3AFBC;
