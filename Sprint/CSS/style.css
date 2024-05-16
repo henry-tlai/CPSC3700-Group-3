@@ -41,17 +41,17 @@ nav ul li a{
     position: relative;
 }
 .header-text{
+    color: white;
     margin-top: 20%;
-    font-size: 30px;
     width: 70%;
 }
 .header-text h1{
-    margin-top: 20%;
+    margin-top: 20px;
     font-size: 80px;
 }
 .btn{
     position: absolute;
-    margin-top: 20px;
+    margin-top: 10%;
     margin-left: 4%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -111,7 +111,7 @@ nav ul li a{
 footer {
     background-color: #E3AFBC;
     color: #5D001E;
-    position: fixed;
+    /*position: fixed;*/
     bottom:0;
     left:0;
     padding: 20px;
