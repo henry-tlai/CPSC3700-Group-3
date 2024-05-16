@@ -48,7 +48,10 @@ nav ul li a{
     margin-top: 20px;
     font-size: 60px;
 }
-.header .btn{
+.header-text p{
+    width: 100%;
+}
+.header-text .btn{
     position: absolute;
     margin-top: 20px;
     margin-left: 4%;
