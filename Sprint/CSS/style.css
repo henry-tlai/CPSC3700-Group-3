@@ -64,49 +64,56 @@ nav ul li a{
     border-radius: 5px;
     text-align: center;
 }
-/* Section 1: Background Image / Description / Button 
-#section1{
-    padding: 80px 0;
+/* review carousel */
+/* scroll*/
+.scrollable{
+    height: 500px;
+    overflow: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
 }
-.row{
+.carousel-container {
+        position: relative;
+        width: 100%;
+        overflow-x: hidden; 
+        overflow-y: auto;
+        max-height: 400px; /* Set a max height for the carousel container */
+        background-color: #E3E2DF;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.carousel{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    transition: transform 0.5s ease;
 }
-.column1{
-    color: white;
-    flex-basis: 50%;
-    margin-top: 20%;
-    font-size: 30px;
+.carousel-item{
+    flex: 0 0 100%;
+            background-color: #E3AFBC;
+               border-radius: 10px;
+            padding: 20px;
+            margin-right: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            color: white;
 }
-.column1{
-    font-size: 60px;
-    margin-top: 30px;
-}
-.column1 .btn{
+.carousel-button{
     position: absolute;
-    margin-top: 20px;
-    margin-left: 4%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: #f1f1f1;
-    color: black;
-    font-size: 16px;
-    padding: 16px 30px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-}
-.column2{
-    flex-basis: 65%;
-}
-.column2 p{
-    flex-basis: 65%;
-    margin-top: 15%;
-    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
-} */
+    border: none;
+    cursor:  pointer;
+    border-radius: 50%;
+}
+.carousel-button.prev{
+    left: 10px;
+}
+.carousel-button.next{
+    right: 10px;
+}
 /* Footer */
 footer {
     background-color: #E3AFBC;

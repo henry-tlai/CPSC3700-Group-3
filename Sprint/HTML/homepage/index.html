@@ -5,59 +5,6 @@
 	<meta charset="UTF-8">
 	<title>Homepage</title>
 	<link rel = "stylesheet" href = "../../CSS/style.css">
-	<!----style for carousel---->
-	<style>
-		/* scroll*/
-		.scrollable{
-			height: 500px;
-			overflow: auto;
-			border: 1px solid #ccc;
-			padding: 10px;
-		}
-		.carousel-container {
-    			position: relative;
-    			width: 100%;
-    			overflow-x: hidden; 
-    			overflow-y: auto;
-    			max-height: 400px; /* Set a max height for the carousel container */
-    			background-color: #E3E2DF;
-    			border-radius: 10px;
-    			padding: 20px;
-    			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-		}
-		.carousel{
-			display: flex;
-			transition: transform 0.5s ease;
-		}
-		.carousel-item{
-			flex: 0 0 100%;
-            		background-color: #E3AFBC;
-           			border-radius: 10px;
-            		padding: 20px;
-            		margin-right: 10px;
-            		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            		color: white;
-		}
-		.carousel-button{
-			position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
-			width: 40px;
-			height: 40px;
-			background-color: rgba(0, 0, 0, 0.5);
-			color: white;
-			border: none;
-			cursor:  pointer;
-			border-radius: 50%;
-		}
-		.carousel-button.prev{
-			left: 10px;
-		}
-		.carousel-button.next{
-			right: 10px;
-		}
-	</style>
-	<!----style for carousel---->
 </head> 
 <body>
 <!-----header/navbar----->
@@ -73,17 +20,15 @@
 				<li><a href="../contact/contact.html">CONTACT</a></li>
 			</ul>
 			</nav>
-<!-- Section 1: revised -->
 			<div class="header-text">
 				<h1>Bite Into Seattle</h1>
 				<h3> Welcome to Bite Into Seattle! Your ultimate guide to the hidden gems and iconic places to eat that define Seattle's culinary landscape. 
 					Whether you're a local foodie looking for the latest trends or a visitor searching for authentic PNW palates, our reviews and recommendations will have you covered!</h3>
 				<a href="../location/location.html"><button class="btn">Food ></button></a>
 			</div>
-<!-- Next Section --> 
 		</div>
 	</div>
-	<!--review carousel-->
+<!-----review carousel----->
 	<div class ="scrollable">
 	<div class="carousel-container">
 		<button class="carousel-button prev" onclick="prevSlide()">Prev</button>
