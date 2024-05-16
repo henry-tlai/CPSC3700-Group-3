@@ -46,7 +46,7 @@ nav ul li a{
     width: 70%;
 }
 .header-text h1{
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 80px;
 }
 .btn{
@@ -73,15 +73,15 @@ nav ul li a{
     padding: 10px;
 }
 .carousel-container {
-        position: relative;
-        width: 100%;
-        overflow-x: hidden; 
-        overflow-y: auto;
-        max-height: 400px; /* Set a max height for the carousel container */
-        background-color: #E3E2DF;
-        border-radius: 10px;
-        padding: 20px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 100%;
+    overflow-x: hidden; 
+    overflow-y: auto;
+    max-height: 400px; /* Set a max height for the carousel container */
+    background-color: #E3E2DF;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 .carousel{
     display: flex;
@@ -89,12 +89,12 @@ nav ul li a{
 }
 .carousel-item{
     flex: 0 0 100%;
-            background-color: #E3AFBC;
-               border-radius: 10px;
-            padding: 20px;
-            margin-right: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            color: white;
+    background-color: #E3AFBC;
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: white;
 }
 .carousel-button{
     position: absolute;
