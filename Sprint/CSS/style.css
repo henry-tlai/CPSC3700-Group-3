@@ -51,7 +51,7 @@ nav ul li a{
 }
 .btn{
     position: absolute;
-    margin-top: 20px;
+    margin-top: 10%;;
     margin-left: 4%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
