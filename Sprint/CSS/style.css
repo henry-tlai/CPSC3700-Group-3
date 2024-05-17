@@ -40,28 +40,18 @@ nav ul li a{
     font-size: 18px;
     position: relative;
 }
-/* Section 1: Background Image / Description / Button */
-#section1{
-    padding: 80px 0;
-}
-.row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.column1{
+.header-text{
     color: white;
-    flex-basis: 50%;
-    margin-top: 20%;
-    font-size: 30px;
+    margin-top: 10%;
+    width: 100%;
 }
-.column1{
-    font-size: 60px;
-    margin-top: 30px;
-}
-.column1 .btn{
-    position: absolute;
+.header-text h1{
     margin-top: 20px;
+    font-size: 80px;
+}
+.btn{
+    position: absolute;
+    margin-top: 10%;;
     margin-left: 4%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -74,26 +64,61 @@ nav ul li a{
     border-radius: 5px;
     text-align: center;
 }
-.column2{
-    flex-basis: 65%;
+/* review carousel */
+/* scroll*/
+.scrollable{
+    height: 500px;
+    overflow: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
 }
-/*.column2 h2{
-    flex-basis: 65%;
-    margin-top: 20%;
-    font-size: 20px;
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden; 
+    overflow-y: auto;
+    max-height: 400px; /* Set a max height for the carousel container */
+    background-color: #E3E2DF;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.carousel{
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.carousel-item{
+    flex: 0 0 100%;
+    background-color: #E3AFBC;
+    border-radius: 10px;
+    padding: 20px;
+    margin-right: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     color: white;
-}*/
-.column2 p{
-    flex-basis: 65%;
-    margin-top: 15%;
-    font-size: 20px;
+}
+.carousel-button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
+    border: none;
+    cursor:  pointer;
+    border-radius: 50%;
+}
+.carousel-button.prev{
+    left: 10px;
+}
+.carousel-button.next{
+    right: 10px;
 }
 /* Footer */
 footer {
     background-color: #E3AFBC;
     color: #5D001E;
-    position: fixed;
+    /*position: fixed;*/
     bottom:0;
     left:0;
     padding: 20px;
