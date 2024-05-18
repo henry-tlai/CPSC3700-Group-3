@@ -112,6 +112,9 @@ nav ul li a{
 .carousel-content h2 {
     font-size: 28px; /* Adjust the font size for the heading */
 }
+.container h2 {
+    font-size: 34px; /* Adjust the font size for the heading */
+}
 
 .carousel-content p {
     font-size: 22px; /* Adjust the font size for the paragraph */
