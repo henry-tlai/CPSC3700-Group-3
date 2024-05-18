@@ -64,9 +64,6 @@ nav ul li a{
     border-radius: 5px;
     text-align: center;
 }
-h2 {
-    border-bottom: none; /* Remove the bottom border */
-}
 /* review carousel */
 /* scroll*/
 .scrollable{
@@ -88,6 +85,7 @@ h2 {
     background-color: #ffffff;
     padding: 10px 10%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: none;
 }
 .carousel{
     display: flex;
