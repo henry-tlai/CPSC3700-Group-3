@@ -8,14 +8,14 @@ body {
     margin: 0;
     font-size: 100%;
     padding: 0;
-    background-color: #E3E2DF;
+    background-color: #ffffff;
      color: #000;
     min-height: 100vh;
     position: relative;
 }
 header {
-    background-color: #E3AFBC;
-    color: #5D001E;
+    background-color: #ffffff;
+    color: #000000;
     padding: 20px;
     text-align: center;
     width: 100%;
@@ -27,7 +27,7 @@ header nav{
 }
 header nav a{
     margin-left: 15px;
-    color: #5D001E;
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
 }
@@ -74,8 +74,8 @@ a{
     color: #5D001E;
 }
 footer {
-    background-color: #E3AFBC;
-    color: #5D001E;
+    background-color: #ffffff;
+    color: #000000;
     position:absolute;
     bottom:0;
     left:0;
@@ -84,7 +84,7 @@ footer {
     width: 100%;
     margin:0;
     box-sizing: border-box;
-    border-color: #5D001E;
+    border-color: #000000;
     border-width: 10px;
 }
 footer ul{
