@@ -94,12 +94,12 @@ nav ul li a{
 }
 .carousel-item{
     flex: 0 0 100%;
-    background-color: #ffffff;
+    background-color: #f5ede7;
     border-radius: 10px;
     padding: 20px;
     margin-right: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    color: white;
+    color: rgb(0, 0, 0);
     min-width: 100%;
     display: flex;
 }
