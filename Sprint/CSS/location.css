@@ -60,7 +60,7 @@ footer {
     box-sizing: border-box;
     border-color: #000000;
     border-width: 10px;
-    position: relative;
+    position: auto;
 }
 footer ul a {
     margin: 0 1.25%;
