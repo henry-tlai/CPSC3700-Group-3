@@ -51,7 +51,17 @@ nav a:hover{
     color:#923754;
 }
 .description p {
+    margin-bottom: 10px;
     font-size: 22px; /* Adjust the font size for the description paragraphs */
+}
+.name {
+    font-family: 'CustomFont', serif; /* Apply the custom font */
+    font-weight: bold; /* Optionally make the name bold */
+    font-size: 18px; /* Adjust the font size for the name */
+}
+
+.regular-text {
+    font-family: serif; /* Apply the regular font */
 }
 .container {
     max-width: 800px;
