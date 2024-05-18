@@ -111,6 +111,13 @@ nav a {
     border-radius: 5px;
     text-align: center;
 }
+.review h2 {
+    font-size: 28px; /* Adjust as needed */
+}
+
+.review p {
+    font-size: 22px; /* Adjust as needed */
+}
 /* Footer */
 footer {
     background-color: #ffffff;
