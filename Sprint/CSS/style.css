@@ -109,7 +109,13 @@ nav ul li a{
     width: 300px; /* Adjusted image width */
     height: auto; /* Maintain aspect ratio */
 }
+.carousel-content h2 {
+    font-size: 24px; /* Adjust the font size for the heading */
+}
 
+.carousel-content p {
+    font-size: 18px; /* Adjust the font size for the paragraph */
+}
 .read-more-btn {
     display: inline-block;
     margin-top: 10px;
