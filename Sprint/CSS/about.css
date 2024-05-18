@@ -63,8 +63,9 @@ nav a:hover{
     margin-bottom: 30px;
 }
 .photo, .description{
-    flex: 1;
+    flex: 1 1 45%;
     padding: 10px;
+    box-sizing: border-box;
 }
 .photo img {
     max-width: 100%;
@@ -125,5 +126,6 @@ footer ul a:hover {
     }
     .photo, .description{
         order: initial;
+        flex: 1 1 100%;
     }
 }
