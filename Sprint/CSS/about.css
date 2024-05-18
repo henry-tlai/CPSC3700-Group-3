@@ -61,7 +61,7 @@ nav a:hover{
 .name {
     font-family: 'CustomNameFont'; /* Apply the custom font */
     font-weight: bold; /* Optionally make the name bold */
-    font-size: 22px; /* Adjust the font size for the name */
+    font-size: 30px; /* Adjust the font size for the name */
 }
 
 .regular-text {
