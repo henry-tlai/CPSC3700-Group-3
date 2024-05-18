@@ -95,6 +95,8 @@ nav ul li a{
     margin-right: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     color: white;
+    min-width: 100%;
+    display: flex;
 }
 .carousel-button{
     position: absolute;
@@ -113,6 +115,17 @@ nav ul li a{
 }
 .carousel-button.next{
     right: 10px;
+}
+.carousel-content{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.carousel-item img{
+    margin-right: 20px;
+}
+.review-text{
+    flex: 1;
 }
 /* Footer */
 footer {
