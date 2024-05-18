@@ -42,8 +42,9 @@ fetch('../../JavaScript/mapdata.json')
                 zoom: zoomData,
                 cluster: {
                     enabled:true,
-                    size:50,
-                    maxZoom: 14
+                    step: 1,
+                    size: 5
+
                 },
                 margin: {
                     t:0,
