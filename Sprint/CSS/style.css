@@ -150,8 +150,6 @@ footer {
     margin-top: auto;
     box-sizing: border-box;
     border-width: 10px;
-    border-color: #000000;
-    border-width: 10px;
 }
 footer ul{
     display: flex;
