@@ -81,7 +81,6 @@ nav ul li a{
     overflow: hidden;
     max-width: 900px;
     margin: 0 auto;
-    max-height: 400px; /* Set a max height for the carousel container */
     background-color: #ffffff;
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -92,6 +91,7 @@ nav ul li a{
     transition: transform 0.5s ease;
     background-color: white;
     padding: 20px;
+    min-height: 100%;
 }
 .carousel-item{
     flex: 0 0 100%;
