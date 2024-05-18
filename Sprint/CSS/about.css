@@ -4,7 +4,7 @@
     src: url('../fonts/PoiretOne-Regular.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'CustomeNameFont';
+    font-family: 'CustomNameFont';
     src: url('../fonts/Kristi-Regular.ttf') format('truetype');
 }
 body {
@@ -59,7 +59,7 @@ nav a:hover{
     font-size: 22px; /* Adjust the font size for the description paragraphs */
 }
 .name {
-    font-family: 'CustomNameFont', serif; /* Apply the custom font */
+    font-family: 'CustomNameFont'; /* Apply the custom font */
     font-weight: bold; /* Optionally make the name bold */
     font-size: 22px; /* Adjust the font size for the name */
 }
