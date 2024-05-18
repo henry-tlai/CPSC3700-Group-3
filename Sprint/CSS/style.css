@@ -106,6 +106,25 @@ h2 {
     min-width: 100%;
     display: flex;
 }
+.carousel-item img {
+    margin-right: 20px;
+    width: 300px; /* Adjusted image width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.read-more-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.read-more-btn:hover {
+    background-color: #ddd;
+}
 .carousel-button{
     position: absolute;
     top: 50%;
