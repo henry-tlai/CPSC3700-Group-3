@@ -90,7 +90,6 @@ nav ul li a{
     display: flex;
     transition: transform 0.5s ease;
     background-color: white;
-    border: 2px solid black;
     padding: 20px;
 }
 .carousel-item{
