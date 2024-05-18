@@ -26,7 +26,13 @@ fetch('../../JavaScript/mapdata.json')
             marker: {
                 size: 9
             },
-            text: text
+            text: text,
+            cluster: {
+                enabled:true,
+                step: 1,
+                size: 20,
+                maxZoom:12
+            }
         };
 
         // Define map layout
@@ -40,13 +46,6 @@ fetch('../../JavaScript/mapdata.json')
                     lon: centerLong
                 },
                 zoom: zoomData,
-                cluster: {
-                    enabled:true,
-                    step: 1,
-                    size: 20,
-                    maxZoom:12
-
-                },
                 margin: {
                     t:0,
                     b:0,
