@@ -115,3 +115,12 @@ footer {
     border-color: #000000;
     border-width: 10px;
 }
+footer ul a {
+    margin: 0 1.25%;
+    text-decoration: none;
+    color: #5D001E;
+}
+footer ul a:hover {
+    text-decoration: underline;
+    color: #923754;
+}
