@@ -69,8 +69,6 @@ footer {
     width: 100%;
     box-sizing: border-box;
     border-top: 1px solid #000;
-    border-color: #000000;
-    border-width: 10px;
 }
 footer ul {
     display: flex;
