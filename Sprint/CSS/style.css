@@ -119,6 +119,16 @@ nav ul li a{
 .carousel-content p {
     font-size: 22px; /* Adjust the font size for the paragraph */
 }
+.review-text h3{
+    font-size: 34px;
+}
+.review-text p{
+    font-size: 22px;
+}
+.container h3{
+    font-size: 34px;
+    text-align: center;
+}
 .read-more-btn {
     display: inline-block;
     margin-top: 10px;
