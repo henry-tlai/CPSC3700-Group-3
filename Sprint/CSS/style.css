@@ -110,11 +110,11 @@ nav ul li a{
     height: auto; /* Maintain aspect ratio */
 }
 .carousel-content h2 {
-    font-size: 24px; /* Adjust the font size for the heading */
+    font-size: 28px; /* Adjust the font size for the heading */
 }
 
 .carousel-content p {
-    font-size: 18px; /* Adjust the font size for the paragraph */
+    font-size: 22px; /* Adjust the font size for the paragraph */
 }
 .read-more-btn {
     display: inline-block;
