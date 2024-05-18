@@ -14,25 +14,40 @@ body {
     position: relative;
 }
 header {
+    position: fixed;
+    z-index: 999;
     background-color: #ffffff;
     color: #000000;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    margin:0;
+    padding: 50px;
+    top:0;
+    width:100%;
     box-sizing: border-box;
 }
-header nav{
-    margin-top: 10px;
+h1{
+    margin: 0 auto;
+    max-width: 80%;
+    text-align: center;
+    margin-top: 200px;
 }
-header nav a{
-    margin-left: 15px;
-    color: #000000;
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.logo{
+    margin-right: auto;
+}
+.links{
+    display:flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+nav a {
+    margin-left:20px;
     text-decoration: none;
-    font-weight: bold;
-}
-header nav a:hover,.profile p a:hover{
-    color:#923754;
+    color:#000000;
 }
 .container{
     max-width: 960px;
