@@ -78,7 +78,7 @@ nav ul li a{
     overflow-x: hidden; 
     overflow-y: auto;
     max-height: 400px; /* Set a max height for the carousel container */
-    background-color: #E3E2DF;
+    background-color: #ffffff;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -92,7 +92,7 @@ nav ul li a{
 }
 .carousel-item{
     flex: 0 0 100%;
-    background-color: #E3AFBC;
+    background-color: #ffffff;
     border-radius: 10px;
     padding: 20px;
     margin-right: 10px;
@@ -133,7 +133,7 @@ nav ul li a{
 }
 /* Footer */
 footer {
-    background-color: #E3AFBC;
+    background-color: #ffffff;
     color: #5D001E;
     /*position: fixed;*/
     bottom:0;
