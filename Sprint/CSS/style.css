@@ -64,6 +64,9 @@ nav ul li a{
     border-radius: 5px;
     text-align: center;
 }
+h2 {
+    border-bottom: none; /* Remove the bottom border */
+}
 /* review carousel */
 /* scroll*/
 .scrollable{
