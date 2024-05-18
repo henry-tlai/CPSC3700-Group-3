@@ -7,6 +7,10 @@
     font-family: 'CustomNameFont';
     src: url('../fonts/Sacramento-Regular.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'CustomIntroFont';
+    src: url(../fonts/UnicaOne-Regular.ttf) format('truetype');
+}
 body {
     font-family: 'CustomFont', serif;
     margin: 0;
@@ -60,9 +64,12 @@ nav a:hover{
 }
 .name {
     font-family: 'CustomNameFont'; /* Apply the custom font */
-    font-weight: bold; /* Optionally make the name bold */
     font-size: 60px; /* Adjust the font size for the name */
     color: #262660;
+}
+.intro{
+    font-family: 'CustomIntroFont';
+    font-weight: bold;
 }
 
 .regular-text {
