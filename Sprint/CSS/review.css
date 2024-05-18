@@ -18,7 +18,7 @@ header {
     z-index: 999;
     background-color: #ffffff;
     color: #000000;
-    padding: 30px;
+    padding: 50px;
     top:0;
     width:100%;
     box-sizing: border-box;
@@ -27,7 +27,7 @@ h1{
     margin: 0 auto;
     max-width: 80%;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 100px;
 }
 nav{
     display:flex;
