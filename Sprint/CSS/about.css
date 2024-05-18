@@ -57,8 +57,11 @@ nav a:hover{
     color:#923754;
     text-decoration: underline;
 }
-.row:nth-child(even){
-    flex-direction: row reverse;
+.row:nth-child(even) .photo{
+    order: 2;
+}
+.row:nth-child(even) .description{
+    order: 1;
 }
 /* Footer */
 footer {
@@ -94,5 +97,8 @@ footer ul a:hover {
     }
     .row:nth-child(even){
         flex-direction: column;
+    }
+    .photo, .description{
+        order: initial;
     }
 }
