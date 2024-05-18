@@ -43,7 +43,8 @@ fetch('../../JavaScript/mapdata.json')
                 cluster: {
                     enabled:true,
                     step: 1,
-                    size: 5
+                    size: 20,
+                    maxZoom:12
 
                 },
                 margin: {
