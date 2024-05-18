@@ -9,6 +9,8 @@ body {
     padding: 0;
     background-color: #ffffff;
     box-sizing: border-box;
+    display:flex;
+    min-height: 100vh;
 }
 *, *::before, *::after{
     box-sizing: inherit;
@@ -58,7 +60,7 @@ footer {
     box-sizing: border-box;
     border-color: #000000;
     border-width: 10px;
-    position: absolute;
+    position: relative;
 }
 footer ul a {
     margin: 0 1.25%;
