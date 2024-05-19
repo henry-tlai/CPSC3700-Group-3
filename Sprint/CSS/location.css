@@ -48,6 +48,7 @@ nav{
 .footerlinks{
     justify-content: center;
     text-align: center;
+    align-self: center;
 }
 nav a {
     margin-left:20px;
