@@ -31,7 +31,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-right: auto;
 }
 
 nav ul {
@@ -40,6 +39,7 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-right: auto;
 }
 
 nav ul li {
