@@ -21,31 +21,25 @@ body{
     background-size: cover;
     background-position: center;
 }
-
 .container {
     padding: 10px 10%;
 }
-
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 nav ul {
     display: flex;
     align-items: center;
     list-style: none;
     padding: 0;
     margin: 0;
-    margin-right: auto;
 }
-
 nav ul li {
     margin: 10px 20px;
 }
-
 nav ul li a {
     text-decoration: none;
     font-size: 18px;
@@ -53,22 +47,27 @@ nav ul li a {
     color: white; /* Default color for links */
     transition: color 0.3s ease; /* Smooth transition for color change */
 }
-
 nav ul li a:hover {
-    color: lightgray; /* Color when hovered over */
+    color: grey; /* Color when hovered over */
 }
-
 .header-text {
     color: white;
     margin-top: 10%;
     width: 100%;
 }
-
-.header-text h1 {
+.text-box {
+    background-color: rgba(169, 169, 169, 0.5); /* Grey with transparency */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.text-box-title {
     margin-top: 20px;
     font-size: 80px;
 }
-
+.text-box-description {
+    background-color: transparent;
+}
 .btn {
     position: absolute;
     margin-top: 10%;
