@@ -29,6 +29,7 @@ h1 {
     margin: 0 auto;
     text-align: center;
     margin-top: 150px;
+    margin-bottom: 16px;
 }
 nav {
     display: flex;
@@ -58,7 +59,7 @@ footer {
     padding: 10px;
     text-align: center;
     width: 100%;
-    margin-top: auto;
+    margin-top: 16px;
 }
 footer nav {
     display: flex;
