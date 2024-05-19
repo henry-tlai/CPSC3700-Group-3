@@ -21,8 +21,6 @@ fetch('../../JavaScript/mapdata.json')
         // Define map data
         var mapData = {
             type: 'scattermapbox',
-            lat: latitudes,
-            lon: longitudes,
             mode: 'markers',
             marker: {
                 size: 12
