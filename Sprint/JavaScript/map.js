@@ -6,6 +6,7 @@ fetch('../../JavaScript/mapdata.json')
         var latitudes = data.map(entry => parseFloat(entry.lat));
         var longitudes = data.map(entry => parseFloat(entry.lon));
         var text = data.map(entry => entry.text);
+        console.log(entry.text);
         var maxLat = Math.max(...latitudes);
         var maxLon = Math.max(...longitudes);
         var minLat = Math.min(...latitudes);
@@ -26,7 +27,7 @@ fetch('../../JavaScript/mapdata.json')
             marker: {
                 size: 12
             },
-            hovertemplate:"<b>%{text}</b>",
+            hovertemplate:"<b>%{entry.text}</b>",
             cluster: {
                 enabled:true,
                 step: 1,
