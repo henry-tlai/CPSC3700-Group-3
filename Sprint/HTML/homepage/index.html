@@ -25,20 +25,18 @@
 				<button class="search-icon" onclick="toggleSearch()">
 					<i class="fa-solid fa-magnifying-glass"></i>
 				</button>
-				<input type="text" id="search-input" placeholder="Search...">
+				<input type="text" id="search-input" placeholder="Search">
 			</div>
 			</nav>
 			<div class="header-text">
-				<div class="text-box-title">
 				<h1>Bite Into Seattle</h1>
 					<div class="text-box-description">
 						<h3> Welcome to Bite Into Seattle! Your ultimate guide to the hidden gems and iconic places to eat that define Seattle's culinary landscape. 
 						Whether you're a local foodie looking for the latest trends or a visitor searching for authentic PNW palates, our reviews and recommendations will have you covered!</h3>
-						<a href="../location/location.html"><button class="btn">Food ></button></a>
+						<a href="../../HTML/review/review.html"><button class="btn">Learn more</button></a>
 					</div>
 				</div>
 			</div>
-		</div>
 	</div>
 	<div class="container" style="text-align: center; margin-top: 20px;">
 		<h2>Latest Articles</h2>
@@ -143,13 +141,23 @@
 		let currentIndex = 0;
 		// search
 		function toggleSearch() {
-            const searchContainer = document.querySelector('.search-container');
-            searchContainer.classList.toggle('active');
-            const searchInput = document.getElementById('search-input');
-            if (searchContainer.classList.contains('active')) {
-                searchInput.focus();
-            }
-        }
+    	const searchContainer = document.querySelector('.search-container');
+    	searchContainer.classList.toggle('active');
+    	const searchInput = document.getElementById('search-input');
+    		if (searchContainer.classList.contains('active')) {
+        		searchInput.focus();
+    		}
+		}
+
+		// Close the search input when clicking outside of it
+		document.addEventListener('click', function(event) {
+    	const searchContainer = document.querySelector('.search-container');
+    	const searchInput = document.getElementById('search-input');
+    		if (!searchContainer.contains(event.target)) {
+        		searchContainer.classList.remove('active');
+        		searchInput.blur();
+    		}
+		});
 		// review
 		function showSlide(index) {
             		carousel.style.transform = `translateX(-${index * 100}%)`;
