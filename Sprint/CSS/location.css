@@ -45,6 +45,10 @@ nav{
     justify-content: flex-end;
     margin-right: 20px;
 }
+.footerlinks{
+    justify-content: center;
+    display: flex;
+}
 nav a {
     margin-left:20px;
     text-decoration: none;
