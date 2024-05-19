@@ -1,1 +1,73 @@
-/* Location CSS file */
+/* Location CSS file *//* Review CSS file */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/PoiretOne-Regular.ttf') format('truetype');
+}
+body {
+    font-family: 'CustomFont', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    display:flex;
+    min-height: 100vh;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+header {
+    position: fixed;
+    z-index: 999;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 50px;
+    top:0;
+    width:100%;
+    box-sizing: border-box;
+}
+h1{
+    margin: 0;
+    text-align: center;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.logo{
+    margin-right: auto;
+}
+.links{
+    display:flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+nav a {
+    margin-left:20px;
+    text-decoration: none;
+    color:#000000;
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    border-color: #000000;
+    border-width: 10px;
+    position: auto;
+}
+footer ul a {
+    margin: 0 1.25%;
+    text-decoration: none;
+    color: #5D001E;
+}
+footer ul a:hover {
+    text-decoration: underline;
+    color: #923754;
+}
