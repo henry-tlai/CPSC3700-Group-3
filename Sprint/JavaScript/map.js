@@ -3,9 +3,10 @@ fetch('../../JavaScript/mapdata.json')
     .then(response => response.json())
     .then(data => {
         // Extract latitudes and longitudes from the JSON data
-        var latitudes = parseFloat(entry.lat);
-        var longitudes = parseFloat(entry.lon);
+        var latitudes = data.map(entry => parseFloat(entry.lat));
+        var longitudes = data.map(entry => parseFloat(entry.lon));
         var text = data.map(entry => entry.text);
+        console.log(text);
         var maxLat = Math.max(...latitudes);
         var maxLon = Math.max(...longitudes);
         var minLat = Math.min(...latitudes);
