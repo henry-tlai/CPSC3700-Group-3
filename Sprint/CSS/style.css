@@ -67,32 +67,21 @@ nav ul li a{
 /* search bar */
     /* Styles for the search container and input field */
 .search-container {
-    position: relative;
     display: flex;
     align-items: center;
 }
-
 .search-icon {
     background: none;
     border: none;
+    color: white;
     cursor: pointer;
-    margin-left: 15px; /* Adjust as needed */
+    font-size: 1.2em;
 }
-
 #search-input {
-    width: 0;
+    display: none; /* Initially hidden */
+    margin-left: 10px;
     padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    transition: width 0.4s ease-in-out;
-    opacity: 0;
-    pointer-events: none;
-}
-
-.search-container.active #search-input {
-    width: 200px; /* Adjust as needed */
-    opacity: 1;
-    pointer-events: auto;
+    font-size: 1em;
 }
 /* review carousel */
 /* scroll*/
