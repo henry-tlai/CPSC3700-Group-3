@@ -28,7 +28,7 @@ header {
 h1 {
     margin: 0 auto;
     text-align: center;
-    margin-top: 3000px;
+    margin-top: 100%;
 }
 nav {
     display: flex;
