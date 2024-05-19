@@ -58,15 +58,17 @@ nav ul li a:hover {
 }
 .header-text h1{
     font-size: 75px;
+    font-weight: bold;
 }
 .text-box-description{
     background-color: rgba(169, 169, 169, 0.5);
     padding: 20px;
     border-radius: 10px;
     width: 80%;
-    margin: 0 auto;
+    margin-left: 0;
     display: flex;
     flex-direction: column;
+    text-align: left;
 }
 .btn {
     margin-top: 5%;
@@ -77,6 +79,11 @@ nav ul li a:hover {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn:hover{
+    background-color: burlywood;
+    transform: scale(1.1);
 }
 /* search bar */
     /* Styles for the search container and input field */
