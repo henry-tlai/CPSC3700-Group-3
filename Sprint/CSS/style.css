@@ -67,10 +67,9 @@ nav ul li a:hover {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: left;
 }
 .btn {
-    margin-top: 10%;
+    margin-top: 5%;
     background-color: #f1f1f1;
     color: black;
     font-size: 16px;
