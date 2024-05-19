@@ -5,7 +5,7 @@ fetch('../../JavaScript/mapdata.json')
         // Extract latitudes and longitudes from the JSON data
         var latitudes = data.map(entry => parseFloat(entry.lat));
         var longitudes = data.map(entry => parseFloat(entry.lon));
-        var text = data.map(entry => entry.text);
+        var text = data.map(entry => entry.name);
         var maxLat = Math.max(...latitudes);
         var maxLon = Math.max(...longitudes);
         var minLat = Math.min(...latitudes);
@@ -24,7 +24,7 @@ fetch('../../JavaScript/mapdata.json')
             lon: longitudes,
             mode: 'markers',
             marker: {
-                size: 9
+                size: 12
             },
             text: text,
             cluster: {
