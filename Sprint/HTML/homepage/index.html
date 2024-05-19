@@ -19,6 +19,13 @@
 				<li><a href="../about/about.html">ABOUT</a></li>
 				<li><a href="../contact/contact.html">CONTACT US</a></li>
 			</ul>
+			<!--Search Bar-->	
+			<div class="search-container">
+				<button class="search-icon" onclick="toggleSearch()">
+					<i class="fa-thin fa-magnifying-glass-location"></i>
+				</button>
+				<input type="text" id="search-input" placeholder="Search...">
+			</div>
 			</nav>
 			<div class="header-text">
 				<h1>Bite Into Seattle</h1>
@@ -123,12 +130,22 @@
     	<p><a href="../homepage/index.html"><img src="img/mahi3.jpeg" width="30" height="auto" alt="Image"></a></p> <!-- Adjust the width and height attributes -->
         <p> © 2024 Bite Into Seattle. All Rights Reserved. </p>
 	</footer>
+<!--JavaScript-->
 	<script>
 		const carousel = document.querySelector('.carousel');
 		const carouselItems = document.querySelectorAll('.carousel-item');
 		const totalItems = carouselItems.length;
 		let currentIndex = 0;
-
+		// search
+		function toggleSearch() {
+            const searchContainer = document.querySelector('.search-container');
+            searchContainer.classList.toggle('active');
+            const searchInput = document.getElementById('search-input');
+            if (searchContainer.classList.contains('active')) {
+                searchInput.focus();
+            }
+        }
+		// review
 		function showSlide(index) {
             		carousel.style.transform = `translateX(-${index * 100}%)`;
         	}
