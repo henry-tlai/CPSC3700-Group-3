@@ -12,9 +12,6 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-main{
-    padding-top: 105px;
-}
 *, *::before, *::after {
     box-sizing: inherit;
 }
@@ -31,7 +28,7 @@ header {
 h1 {
     margin: 0 auto;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 200px;
 }
 nav {
     display: flex;
