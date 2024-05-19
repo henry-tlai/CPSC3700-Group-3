@@ -6,7 +6,7 @@ fetch('../../JavaScript/mapdata.json')
         var latitudes = data.map(entry => parseFloat(entry.lat));
         var longitudes = data.map(entry => parseFloat(entry.lon));
         var text = data.map(entry => entry.text);
-        console.log(text);
+        console.log(entry.text);
         var maxLat = Math.max(...latitudes);
         var maxLon = Math.max(...longitudes);
         var minLat = Math.min(...latitudes);
