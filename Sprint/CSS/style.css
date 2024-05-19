@@ -21,11 +21,9 @@ body{
     background-size: cover;
     background-position: center;
 }
-
 .container {
     padding: 10px 10%;
 }
-
 nav {
     display: flex;
     align-items: center;
@@ -57,9 +55,18 @@ nav ul li a:hover {
     margin-top: 10%;
     width: 100%;
 }
-.header-text h1 {
+.text-box {
+    background-color: rgba(169, 169, 169, 0.5); /* Grey with transparency */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.text-box-title {
     margin-top: 20px;
     font-size: 80px;
+}
+.text-box-description {
+    background-color: transparent;
 }
 .btn {
     position: absolute;
