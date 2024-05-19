@@ -27,7 +27,7 @@ fetch('../../JavaScript/mapdata.json')
             marker: {
                 size: 12
             },
-            hovertemplate:"<b>%{entry.text}</b>",
+            hovertemplate:"%{entry.text}",
             cluster: {
                 enabled:true,
                 step: 1,
