@@ -69,6 +69,7 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     text-align: left;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
 .btn {
     margin-top: 5%;
