@@ -14,44 +14,63 @@ body{
     color: black;
 }
 /* Header */
-#header{
+#header {
     width: 100%;
     height: 90vh;
-    background-image: URL(../HTML/homepage/img/sea2.jpg);
+    background-image: url(../HTML/homepage/img/sea2.jpg);
     background-size: cover;
     background-position: center;
 }
-.container{
+
+.container {
     padding: 10px 10%;
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-nav ul li{
-    display: inline-block;
+
+nav ul {
+    display: flex;
+    align-items: center;
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
     margin: 10px 20px;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     font-size: 18px;
     position: relative;
+    color: white; /* Default color for links */
+    transition: color 0.3s ease; /* Smooth transition for color change */
 }
-.header-text{
+
+nav ul li a:hover {
+    color: lightgray; /* Color when hovered over */
+}
+
+.header-text {
     color: white;
     margin-top: 10%;
     width: 100%;
 }
-.header-text h1{
+
+.header-text h1 {
     margin-top: 20px;
     font-size: 80px;
 }
-.btn{
+
+.btn {
     position: absolute;
-    margin-top: 10%;;
+    margin-top: 10%;
     margin-left: 4%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
