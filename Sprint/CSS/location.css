@@ -47,7 +47,7 @@ nav{
 }
 .footerlinks{
     justify-content: center;
-    display: flex;
+    text-align: center;
 }
 nav a {
     margin-left:20px;
