@@ -56,14 +56,19 @@ nav ul li a:hover {
     margin-top: 10%;
     width: 100%;
 }
+.header-text h1{
+    margin-top: 20%;
+    font-size: 30px;
+}
 .text-box-description{
     background-color: rgba(169, 169, 169, 0.5);
     padding: 20px;
     border-radius: 10px;
+    width: 80%;
 }
 .btn {
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 3%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     background-color: #f1f1f1;
