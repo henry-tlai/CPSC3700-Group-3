@@ -49,11 +49,11 @@ nav a {
     text-decoration: none;
     color:#000000;
 }
-.container{
+/*.container{
     max-width: 960px;
     margin: 20px auto;
     padding: 0 20px;
-}
+}*/
 h1 {
     text-align: center;
 }
@@ -62,7 +62,7 @@ h1 {
     justify-content: space-between;
     margin-bottom: 30px;
 }
-.profile {
+/*.profile {
     width: 45%; /* Adjust the width as needed */
     text-align: center;
     background-color: #F0F0F0;
@@ -70,8 +70,8 @@ h1 {
     border-radius: 10px;
     box-shadow: 0px 160px 320px rbga(0,0,0,0);
     margin-bottom:  20px;
-}
-.profile img {
+}*/
+/*.profile img {
     max-width: 100px;
     border-radius: 50%;
     display: block;
@@ -83,7 +83,7 @@ h1 {
 }
 .profile p {
     margin: 0;
-}
+}*/
 a{
     text-decoration:none;
     color: #5D001E;
