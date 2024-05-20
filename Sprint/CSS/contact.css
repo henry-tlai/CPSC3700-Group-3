@@ -62,28 +62,6 @@ h1 {
     justify-content: space-between;
     margin-bottom: 30px;
 }
-/*.profile {
-    width: 45%; 
-    text-align: center;
-    background-color: #F0F0F0;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 160px 320px rbga(0,0,0,0);
-    margin-bottom:  20px;
-}*/
-/*.profile img {
-    max-width: 100px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 10px;
-}
-.profile h2 {
-    margin-bottom: 5px;
-    color: #5D001E; /*NOT SURE WHAT COLOR WE WANT HERE!!
-}
-.profile p {
-    margin: 0;
-}*/
 a{
     text-decoration:none;
     color: #5D001E;
@@ -119,10 +97,10 @@ footer ul a:hover {
 .container {
     font-family: 'CustomFont', serif;
     margin:auto;
-    max-width: 400px;
+    max-width: 500px;
     border-radius: 4px;
     background-image: url("opt4.jpg");
-    padding: 20px
+    padding: 30px
 }
 input[type=text], select, textarea {
   font-family: 'CustomFont', serif;
