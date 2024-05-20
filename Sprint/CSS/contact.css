@@ -118,8 +118,7 @@ footer ul a:hover{
 }
 .container {
   border-radius: 5px;
-  /*background-image: url("../../img/opt4.jpg");*/
-  background-color:babypink;
+  background-image: url("opt4.jpg");
   padding: 20px;
   width: 50%
 }
