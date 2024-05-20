@@ -147,4 +147,7 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #5D001E;
 }
+.optional{
+    display: none
+}
 
