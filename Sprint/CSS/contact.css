@@ -116,3 +116,23 @@ footer ul a:hover{
     text-decoration: underline;
     color: #923754
 }
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #5805b03e;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical  
+}
+input[type= description], textarea {
+    width: 100%; 
+    padding: 30px; 
+    border: 2px solid #5805b03e; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical
+}
