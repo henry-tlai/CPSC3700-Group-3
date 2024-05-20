@@ -2,10 +2,11 @@
 fetch('../../JavaScript/mapdata.json')
     .then(response => response.json())
     .then(data => {
-        // Extract latitudes, longitudes, and text from the JSON data
+        // Extract latitudes, longitudes, text, and urls from the JSON data
         var latitudes = data.map(entry => parseFloat(entry.lat));
         var longitudes = data.map(entry => parseFloat(entry.lon));
         var text = data.map(entry => entry.text);
+        var urls = data.map(entry => entry.url);
 
         var maxLat = Math.max(...latitudes);
         var maxLon = Math.max(...longitudes);
@@ -29,6 +30,7 @@ fetch('../../JavaScript/mapdata.json')
                 size: 12
             },
             text: text,
+            customdata: urls,
             hovertemplate: "%{text}<extra></extra>",
             cluster: {
                 enabled: true,
@@ -66,6 +68,13 @@ fetch('../../JavaScript/mapdata.json')
 
         // Plot the map
         Plotly.plot('map', [mapData], layout, { mapboxAccessToken: 'pk.eyJ1IjoibWJ1c3RvczI3IiwiYSI6ImNsdzVrcWRheDFqeXIybHF1ZmU4aTBzZ24ifQ.tq8snteIBBOhq44zVwS7BQ' });
+
+        // Add click event listener
+        document.getElementById('map').on('plotly_click', function(data) {
+            var point = data.points[0];
+            var url = point.customdata;
+            window.open(url, '_blank');
+        });
     })
     .catch(error => console.error('Error fetching JSON:', error));
 

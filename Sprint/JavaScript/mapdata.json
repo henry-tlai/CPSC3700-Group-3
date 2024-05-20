@@ -1,10 +1,59 @@
 [
-    {"lat": "47.61256109336196", "lon": "-122.31957947165411", "text": "Koko's Restaurant and Tequila Bar"},
-    {"lat": "47.60689021276609", "lon": "-122.31641843715033", "text": "Migoto"},
-    {"lat": "47.61937221637858", "lon": "-122.31264122562146", "text": "Kobuta & Ookami Katsu and Sake House"},
-    {"lat": "47.613245397602256", "lon": "-122.31949102747389", "text": "Gokan Sushi and Katsu"},
-    {"lat": "47.614107105194044", "lon": "-122.3244784288888", "text": "Tavolàta Capitol Hill"},
-    {"lat": "47.611009833661484", "lon": "-122.31645927721061", "text": "Rhein Haus Seattle"},
-    {"lat": "47.59975268343843", "lon": "-122.32594678963758", "text": "Chengdu Memory"},
-    {"lat": "47.61765658976849", "lon": "-122.17796359840558", "text": "Paik's Noodle"}
+    {
+        "lat": "47.61256109336196",
+        "lon": "-122.31957947165411",
+        "text": "Koko's Restaurant and Tequila Bar",
+        "url": "../reviewarticles/article1.html"
+    },
+    {
+        "lat": "47.60689021276609",
+        "lon": "-122.31641843715033",
+        "text": "Migoto",
+        "url": "../reviewarticles/article2.html"
+    },
+    {
+        "lat": "47.61937221637858",
+        "lon": "-122.31264122562146",
+        "text": "Kobuta & Ookami Katsu and Sake House",
+        "url": "../reviewarticles/article3.html"
+    },
+    {
+        "lat": "47.613245397602256",
+        "lon": "-122.31949102747389",
+        "text": "Gokan Sushi and Katsu",
+        "url": "../reviewarticles/article4.html"
+    },
+    {
+        "lat": "47.614107105194044",
+        "lon": "-122.3244784288888",
+        "text": "Tavolàta Capitol Hill",
+        "url": "../reviewarticles/article5.html"
+    },
+    {
+        "lat": "47.611009833661484",
+        "lon": "-122.31645927721061",
+        "text": "Rhein Haus Seattle",
+        "url": "../reviewarticles/article6.html"
+    },
+
+    {
+        "lat": "47.61517571124515",
+        "lon": "-122.31225247346103",
+        "text": "Chengdu Memory",
+        "url": "../reviewarticles/article7.html"
+    },
+
+    {
+        "lat": "47.59975268343843",
+        "lon": "-122.32594678963758",
+        "text": "Chengdu Memory",
+        "url": "../reviewarticles/article8.html"
+    },
+
+    {
+        "lat": "47.61765658976849",
+        "lon": "-122.17796359840558",
+        "text": "Paik's Noodle",
+        "url": "../reviewarticles/article9.html"
+    }
 ]
