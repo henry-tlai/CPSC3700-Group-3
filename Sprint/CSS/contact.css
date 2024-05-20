@@ -125,6 +125,7 @@ footer ul a:hover {
     padding: 20px
 }
 input[type=text], select, textarea {
+  font-family: 'CustomFont', serif;
   width: 100%; 
   padding: 12px;
   border: 1px solid #ccc; 
@@ -136,6 +137,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
+  font-family: 'CustomFont', serif;
   background-color: #5d001d8f;
   color: white;
   padding: 12px 20px;
