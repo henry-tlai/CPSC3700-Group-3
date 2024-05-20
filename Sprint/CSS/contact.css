@@ -121,8 +121,6 @@ footer ul a:hover{
   background-image: url("opt4.jpg");
   padding: 20px;
   width: 50%
-  height: 50%;
-  text-align: center
 }
 input[type=text], select, textarea {
   width: 100%; 
