@@ -3,7 +3,7 @@ document.getElementById('reason').addEventListener('change', function() {
     if (this.value === 'change restaurant information') {
         showIf.classList.remove('optional');
     else if (this.value === 'contact author') {
-        showIf.classList.remove('optional');
+        showIf.classList.remove('optional2');
     } else {
         showIf.classList.add('optional');
     }
