@@ -117,6 +117,7 @@ footer ul a:hover {
     color: #923754;
 }
 .container {
+    font-family: 'CustomFont', serif;
     margin:auto;
     max-width: 400px;
     border-radius: 4px;
