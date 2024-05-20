@@ -117,10 +117,12 @@ nav a:hover{
 footer {
     background-color: #ffffff;
     color: #000000;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     width: 100%;
+    margin: 0;
     box-sizing: border-box;
+    border-width: 10px;
 }
 footer ul {
     display: flex;
