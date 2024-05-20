@@ -120,7 +120,7 @@ footer ul a:hover{
   border-radius: 5px;
   background-image: url("opt4.jpg");
   padding: 20px;
-  width: 50%
+  width: 50%;
   height: 50%
 }
 input[type=text], select, textarea {
