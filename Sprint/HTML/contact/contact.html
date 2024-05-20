@@ -33,14 +33,21 @@
             <input type="text" id="email" name="email" placeholder="mckee@example.com">
             <label for="reason">Contact Reason</label>
             <select id="reason" name="reason">
-                <option value="change restaurant information">Change restaurant information</option>
                 <option value="safety issue">Safety issue</option>
+                <option value="change restaurant information">Change restaurant information</option>
                 <option value="issue with the platform">Issue with the platform</option>
                 <option value="contact author">Contact Author</option>
                 <option value="other">Other</option>
             </select><br>
             <div id="who" class="optional">
                 <label for="who">Select one</label>
+                <select id="who" name="who">
+                    <option value="restaurant owner">Restaurant owner</option>
+                    <option value="authorized reprensentative">Authorized representative</option>
+                </select>
+            </div>
+            <div id="author" class="optional">
+                <label for="author">Select one</label>
                 <select id="who" name="who">
                     <option value="restaurant owner">Restaurant owner</option>
                     <option value="authorized reprensentative">Authorized representative</option>
