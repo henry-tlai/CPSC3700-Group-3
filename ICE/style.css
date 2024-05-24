@@ -29,15 +29,28 @@ main {
     padding: 20px;
     background-color: #ffffff;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 1200px; /* Adjusted to accommodate more content */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-/* Our news articles Section */
+
+/* New content wrapper to hold articles and video side by side */
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start; /* Align items to the top */
+}
+
+/* News articles section */
+.news-container {
+    flex: 2;
+}
+
 .favorites-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin-top: 20px;
+    width: 100%;
 }
 
 .favorite-item {
@@ -62,6 +75,27 @@ main {
     font-size: 16px;
 }
 
-.caption{
-    font-size:10px;
+.caption {
+    font-size: 10px;
+}
+
+/* New video container section */
+.video-container {
+    flex: 0 0 auto; /* Ensure the container doesn't grow or shrink */
+    max-width: 400px; /* Adjust the max-width to the size of your video */
+    background-color: #f5ede7;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 67px;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.video-container p{
+    font-size: 14px;
 }
