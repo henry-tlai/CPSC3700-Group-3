@@ -104,7 +104,7 @@ footer {
     width: 35%;
 }
 .footer1 .footer-center i {
-    background-color: #f5ede7;
+    background-color: rgb(192, 165, 131);
     color: black;
     font-size: 25px;
     width: 38px;
@@ -180,10 +180,10 @@ footer {
     margin-bottom: 5px;
 }
 .footer1 .footer-icons a:hover {
-    background-color: #5D001E;
+    background-color: rgb(192, 165, 131);
 }
 .footer-links a:hover {
-    color: #5D001E;
+    color: rgb(192, 165, 131);
 }
 @media (max-width: 880px) {
     .footer1 .footer-left, .footer1 .footer-center, .footer1 .footer-right {
