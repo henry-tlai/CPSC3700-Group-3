@@ -125,7 +125,7 @@ footer {
     text-align: left;
     font: bold 16px;
     padding: 50px 50px 60px 50px;
-    margin-top: 70px;
+    margin: 0px;
 }
 .footer1 .footer-left, .footer1 .footer-center, .footer1 .footer-right {
     display: inline-block;
