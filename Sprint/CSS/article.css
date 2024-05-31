@@ -202,6 +202,6 @@ a.directions-button img {
     display: block;
     margin: 20px auto; /* Center the image button */
 }
-p {
+main p {
     font-size: 30px; /* Increase the font size for paragraph text */
 }
