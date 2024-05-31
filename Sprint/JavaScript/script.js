@@ -8,7 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function toggleSearch() {
         console.log("Toggle search function called");
         const searchContainer = document.querySelector('.search-container');
+        console.log("Search container classList before toggle:", searchContainer.classList);
         searchContainer.classList.toggle('active');
+        console.log("Search container classList after toggle:", searchContainer.classList);
         const searchInput = document.getElementById('search-input');
         if (searchContainer.classList.contains('active')) {
             console.log("Search container is active");
@@ -32,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!searchContainer.contains(event.target)) {
             console.log("Clicked outside search container");
             searchContainer.classList.remove('active');
+            console.log("Search container classList after removal:", searchContainer.classList);
             searchInput.blur();
         }
     });
