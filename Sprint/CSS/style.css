@@ -397,3 +397,12 @@ footer {
         margin-left: 0;
     }
 }
+
+#search-dropdown{
+    position:absolute;
+    top: calc(100% + 10px);
+    margin: 2px;
+    border: 2px solid black;
+    background-color: f5ede7;
+    z-index: 1000;
+}
