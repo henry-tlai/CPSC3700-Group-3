@@ -14,47 +14,65 @@ body{
     color: black;
 }
 /* Header */
-#header{
+#header {
     width: 100%;
     height: 90vh;
-    background-image: URL(../HTML/homepage/img/sea3.jpeg);
+    background-image: url(../HTML/homepage/img/sea10.webp);
     background-size: cover;
     background-position: center;
 }
-.container{
+.container {
     padding: 10px 10%;
 }
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-nav ul li{
-    display: inline-block;
+nav ul {
+    display: flex;
+    align-items: center;
     list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+}
+nav ul li {
     margin: 10px 20px;
 }
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     font-size: 18px;
     position: relative;
+    color: white; /* Default color for links */
+    transition: color 0.3s ease; /* Smooth transition for color change */
 }
-.header-text{
+nav ul li a:hover {
+    color: grey; /* Color when hovered over */
+}
+.header-text {
     color: white;
     margin-top: 10%;
     width: 100%;
 }
 .header-text h1{
-    margin-top: 20px;
-    font-size: 80px;
+    font-size: 75px;
+    font-weight: bold;
 }
-.btn{
-    position: absolute;
-    margin-top: 10%;;
-    margin-left: 4%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+.text-box-description{
+    background-color: rgba(169, 169, 169, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+.btn {
+    margin-top: 5%;
     background-color: #f1f1f1;
     color: black;
     font-size: 16px;
@@ -62,7 +80,41 @@ nav ul li a{
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn:hover{
+    background-color: burlywood;
+    transform: scale(1.1);
+}
+/* search bar */
+    /* Styles for the search container and input field */
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.search-icon {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+#search-input{
+    display: none;
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+.search-container.active #search-input{
+    display: block;
+    width: 300px;
+    opacity: 1;
 }
 /* review carousel */
 /* scroll*/
@@ -175,42 +227,6 @@ nav ul li a{
     flex: 1;
     color: black;
 }
-/* Footer */
-footer {
-    background-color: #ffffff;
-    color: #5D001E;
-    /*position: fixed;*/
-    bottom:0;
-    left:0;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    margin:0;
-    margin-top: auto;
-    box-sizing: border-box;
-    border-width: 10px;
-}
-footer ul{
-    display: flex;
-    justify-content: center;
-    margin-bottom:10px; /*Space between image and text*/
-}
-footer ul a{
-    margin: 0  1.25%;
-    text-decoration: none;
-    color: #5D001E;
-    }
-footer ul a:hover{
-    text-decoration: underline;
-    color: #923754
-}
-.prev{
-    left:10px;
-}
-.next{
-    right:10px;
-}
-
 /* Our Favorites Section */
 .favorites-grid {
     display: grid;
@@ -239,4 +255,145 @@ footer ul a:hover{
 
 .favorite-item p {
     font-size: 16px;
+}
+/* Footer */
+footer {
+    /*position: fixed;*/
+    bottom: 0;
+}
+.footer1 {
+    background-color:#f5ede7;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px;
+    padding: 50px 50px 60px 50px;
+    margin-top: 70px;
+}
+.footer1 .footer-left, .footer1 .footer-center, .footer1 .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+.footer1 .footer-left {
+    width: 30%;
+}
+.footer1 h3 {
+    color: black;
+    margin: 0;
+    font: normal 36px;
+}
+.footer1 h3 span {
+    color: #5D001E;
+}
+.footer1 .footer-links {
+    color: black;
+    margin: 20px 0 12px;
+}
+.footer1 .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+.footer1 .footer-company-name {
+    color:#f5ede7;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+.footer1 .footer-center {
+    width: 35%;
+}
+.footer1 .footer-center i {
+    background-color:rgb(192, 165, 131);
+    color: black;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+.footer1 .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+.footer1 .footer-center i.fa-phone {
+    font-size: 17px;
+    line-height: 38px;
+}
+.footer1 .footer-center i.fa-location-dot {
+    font-size: 17px;
+    line-height: 38px;
+}
+.footer1 .footer-center p {
+    display: inline-block;
+    color: black;
+    vertical-align: middle;
+    margin: 0;
+}
+.footer1 .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 2;
+}
+.footer1 .footer-center p a {
+    color: #5D001E;
+    text-decoration: none;
+}
+.footer1 .footer-right {
+    width: 30%;
+}
+.footer1 .footer-company-about {
+    line-height: 20px;
+    color:black;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+.footer1 .footer-company-about span {
+    display: block;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.footer1 .footer-icons {
+    font-size: 17px;
+    line-height: 38px;
+    margin-top: 25px;
+}
+.footer1 .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #f5ede7;
+    border-radius: 2px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+.footer1 .footer-icons a:hover {
+    background-color: rgb(192, 165, 131);
+}
+.footer-links a:hover {
+    color: rgb(192, 165, 131);
+}
+@media (max-width: 880px) {
+    .footer1 .footer-left, .footer1 .footer-center, .footer1 .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer1 .footer-center i {
+        margin-left: 0;
+    }
 }
