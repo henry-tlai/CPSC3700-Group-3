@@ -22,10 +22,49 @@
             </div>
         </nav>
     </header>
+    <header>
+        <nav>
+            <div class = "logo">
+                <p><a href="../../index.html"><img src="../../Img/mahi3.jpeg" width="70" height="auto" alt="MAHI logo"></a></p>
+            </div>
+            <div class="links">
+                <a href="../../index.html">HOME</a>
+                <a href="../location/location.html">LOCATIONS</a>
+                <a href="../review/review.html">REVIEWS</a>
+                <a href="../about/about.html">ABOUT</a>
+                <a href="../contact/contact.html">CONTACT US</a>
+            </div>
+        </nav>
+    </header>
     <h1>CONTACT US</h1>
-    <h4 style="text-align:center">Website is under construction, come back soon...</h4>
-    
-            
+    <div class="container">
+        <form>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Michael">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="McKee">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="mckee@example.com">
+            <label for="reason">Contact Reason</label>
+            <select id="reason" name="reason">
+                <option value="safety issue">Safety issue</option>
+                <option value="change restaurant information">Change restaurant information</option>
+                <option value="issue with the platform">Issue with the platform</option>
+                <option value="contact author">Contact Author</option>
+                <option value="other">Other</option>
+            </select><br>
+            <div id="who" class="optional">
+                <label for="who">Select one</label>
+                <select id="who" name="who">
+                    <option value="restaurant owner">Restaurant owner</option>
+                    <option value="authorized reprensentative">Authorized representative</option>
+                </select>
+            </div>
+            <label for="message">Message</label>
+            <textarea style="height:200px"id="message" name="message" placeholder="Tell us..."></textarea>
+            <input type="submit" value"SUBMIT">
+        </form>
+    </div>   
 <!-----footer----->
 <footer class="footer1">
 	<div class="footer-left">
