@@ -5,14 +5,15 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
 
     function toggleSearch() {
+        console.log("Toggle search function called");
         const searchContainer = document.querySelector('.search-container');
         searchContainer.classList.toggle('active');
         const searchInput = document.getElementById('search-input');
         if (searchContainer.classList.contains('active')) {
-            console.log("testing focus")
             searchInput.focus();
         }
     }
+    
 
     const searchIcon = document.querySelector('.search-icon');
     
