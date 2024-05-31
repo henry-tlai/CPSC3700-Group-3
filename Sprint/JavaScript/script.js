@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.search-icon').addEventListener('click', toggleSearch);
 
     // Fetch JSON data
-    fetch('../../JavaScript/data.json')
+    fetch('../../JavaScript/mapdata.json')
         .then(response => response.json())
         .then(data => {
             const fuse = new Fuse(data, {
