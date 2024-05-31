@@ -1,72 +1,74 @@
-document.addEventListener('DOMContentLoaded', () => {
-    console.log("DOM Content Loaded");
+document.addEventListener('DOMContentLoaded', function() {
     const carousel = document.querySelector('.carousel');
     const carouselItems = document.querySelectorAll('.carousel-item');
     const totalItems = carouselItems.length;
     let currentIndex = 0;
 
-    let isSearchActive = false; // Initialize boolean variable to track search state
-
+    // Function to toggle the search container
     function toggleSearch() {
-        console.log("Toggle search function called");
         const searchContainer = document.querySelector('.search-container');
-        const searchInput = document.getElementById('search-input');
-    
-        // Toggle the "active" class to control visibility
         searchContainer.classList.toggle('active');
-    
+        const searchInput = document.getElementById('search-input');
         if (searchContainer.classList.contains('active')) {
-            console.log("Search container is activated");
-            searchInput.style.display = "block"; // Show search input
-            searchInput.focus(); // Focus on search input
-        } else {
-            console.log("Search container is deactivated");
-            searchInput.style.display = "none"; // Hide search input
-            searchInput.blur(); // Remove focus from search input
+            searchInput.focus();
         }
-    
-        // Update the search state based on the current presence of "active" class
-        isSearchActive = searchContainer.classList.contains('active');
     }
 
-    const searchIcon = document.querySelector('.search-icon');
-    console.log("Search icon found:", searchIcon);
-    
-    searchIcon.addEventListener('click', () => {
-        console.log("Search icon clicked");
-        toggleSearch();
-    });
-    
+    // Event listener for the search icon
+    document.querySelector('.search-icon').addEventListener('click', toggleSearch);
+
+    // Event listener to close the search input when clicking outside of it
     document.addEventListener('click', function(event) {
-        console.log("Document clicked");
         const searchContainer = document.querySelector('.search-container');
         const searchInput = document.getElementById('search-input');
         if (!searchContainer.contains(event.target)) {
-            console.log("Clicked outside search container");
             searchContainer.classList.remove('active');
-            console.log("Search container classList after removal:", searchContainer.classList);
             searchInput.blur();
         }
     });
 
+    // Function to show the slide
     function showSlide(index) {
-        console.log("Showing slide:", index);
         carousel.style.transform = `translateX(-${index * 100}%)`;
     }
 
+    // Function to show the next slide
     function nextSlide() {
-        console.log("Next slide");
         currentIndex = (currentIndex + 1) % totalItems;
         showSlide(currentIndex);
     }
 
+    // Function to show the previous slide
     function prevSlide() {
-        console.log("Previous slide");
         currentIndex = (currentIndex - 1 + totalItems) % totalItems;
         showSlide(currentIndex);
     }
 
+    // Event listeners for the carousel buttons
     document.querySelector('.carousel-button.next').addEventListener('click', nextSlide);
     document.querySelector('.carousel-button.prev').addEventListener('click', prevSlide);
-    document.querySelector('.search-icon').addEventListener('click', toggleSearch);
+
+    // Load JSON data dynamically
+    fetch('../../JavaScript/mapdata.json')
+        .then(response => response.json())
+        .then(data => {
+            // Initialize Fuse.js with the loaded JSON data
+            const fuse = new Fuse(data, {
+                keys: ['text'],
+                includeScore: true
+            });
+
+            // Function to perform fuzzy search
+            function performSearch(query) {
+                const results = fuse.search(query);
+                // Implement code to display search results
+                console.log(results);
+            }
+
+            // Example: Perform search when input value changes
+            document.getElementById('search-input').addEventListener('input', function(event) {
+                performSearch(event.target.value);
+            });
+        })
+        .catch(error => console.error('Error loading JSON data:', error));
 });
