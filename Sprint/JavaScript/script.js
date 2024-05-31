@@ -9,16 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
         searchContainer.classList.toggle('active');
         const searchInput = document.getElementById('search-input');
         if (searchContainer.classList.contains('active')) {
+            console.log("testing focus")
             searchInput.focus();
         }
     }
+
+    const searchIcon = document.querySelector('.search-icon');
     
-    document.addEventListener('DOMContentLoaded', () => {
-        const searchIcon = document.querySelector('.search-icon');
-    
-        searchIcon.addEventListener('click', () => {
-            toggleSearch();
-        });
+    searchIcon.addEventListener('click', () => {
+        toggleSearch();
     });
     
     document.addEventListener('click', function(event) {
