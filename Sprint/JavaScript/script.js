@@ -12,7 +12,15 @@ document.addEventListener('DOMContentLoaded', () => {
             searchInput.focus();
         }
     }
-
+    
+    document.addEventListener('DOMContentLoaded', () => {
+        const searchIcon = document.querySelector('.search-icon');
+    
+        searchIcon.addEventListener('click', () => {
+            toggleSearch();
+        });
+    });
+    
     document.addEventListener('click', function(event) {
         const searchContainer = document.querySelector('.search-container');
         const searchInput = document.getElementById('search-input');
