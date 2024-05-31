@@ -258,7 +258,7 @@ nav ul li a:hover {
 }
 /* Footer */
 footer {
-    position: fixed;
+    /*position: fixed;*/
     bottom: 0;
 }
 .footer1 {
