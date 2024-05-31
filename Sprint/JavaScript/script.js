@@ -25,11 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
             searchInput.blur(); // Remove focus from search input
         }
     
-        isSearchActive = !isSearchActive; // Toggle search state
+        // Update the search state based on the current presence of "active" class
+        isSearchActive = searchContainer.classList.contains('active');
     }
-    
-    
-    
 
     const searchIcon = document.querySelector('.search-icon');
     console.log("Search icon found:", searchIcon);
