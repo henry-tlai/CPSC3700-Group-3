@@ -11,19 +11,23 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log("Toggle search function called");
         const searchContainer = document.querySelector('.search-container');
         const searchInput = document.getElementById('search-input');
-        
-        if (!isSearchActive) {
+    
+        // Toggle the "active" class to control visibility
+        searchContainer.classList.toggle('active');
+    
+        if (searchContainer.classList.contains('active')) {
             console.log("Search container is activated");
-            searchContainer.style.display = "block"; // Set display to block
-            searchInput.focus();
+            searchInput.style.display = "block"; // Show search input
+            searchInput.focus(); // Focus on search input
         } else {
             console.log("Search container is deactivated");
-            searchContainer.style.display = "none"; // Set display to none
-            searchInput.blur();
+            searchInput.style.display = "none"; // Hide search input
+            searchInput.blur(); // Remove focus from search input
         }
-        
+    
         isSearchActive = !isSearchActive; // Toggle search state
     }
+    
     
     
 
