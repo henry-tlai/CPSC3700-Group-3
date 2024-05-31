@@ -409,5 +409,5 @@ footer {
     font-size: 18px;
 }
 .dropdown-item:hover{
-    background-color: #f5ede79f;
+    background-color: #f5ede79f !important;
 }
