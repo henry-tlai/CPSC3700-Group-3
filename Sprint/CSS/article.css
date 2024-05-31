@@ -61,3 +61,12 @@ nav a {
 .star.not-filled{
     background-image: url('../HTML/reviewarticles/img/star.svg');
 }
+a.directions-button img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Center the image button */
+}
+p {
+    font-size: 1.2em; /* Increase the font size for paragraph text */
+}
