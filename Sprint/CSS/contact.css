@@ -49,11 +49,6 @@ nav a {
     text-decoration: none;
     color:#000000;
 }
-.container{
-    max-width: 960px;
-    margin: 20px auto;
-    padding: 0 20px;
-}
 h1 {
     text-align: center;
 }
@@ -62,31 +57,46 @@ h1 {
     justify-content: space-between;
     margin-bottom: 30px;
 }
-.profile {
-    width: 45%; /* Adjust the width as needed */
-    text-align: center;
-    background-color: #F0F0F0;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 160px 320px rbga(0,0,0,0);
-    margin-bottom:  20px;
-}
-.profile img {
-    max-width: 100px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 10px;
-}
-.profile h2 {
-    margin-bottom: 5px;
-    color: #5D001E; /*NOT SURE WHAT COLOR WE WANT HERE!!*/
-}
-.profile p {
-    margin: 0;
-}
 a{
     text-decoration:none;
     color: #5D001E;
+}
+.container {
+    font-family: 'CustomFont', serif;
+    margin:auto;
+    max-width: 500px;
+    border-radius: 4px;
+    background-image: url("../img/opt4.jpg");
+    padding: 30px;
+    font-weight: bold
+}
+input[type=text], select, textarea {
+  font-family: 'CustomFont', serif;
+  width: 100%; 
+  padding: 12px;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+input[type=submit] {
+  font-family: 'CustomFont', serif;
+  background-color: #5d001d8f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #5D001E;
+}
+.optional{
+    display: none
 }
 /* footer */
 footer {
