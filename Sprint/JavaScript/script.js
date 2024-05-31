@@ -5,19 +5,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const totalItems = carouselItems.length;
     let currentIndex = 0;
 
+    let isSearchActive = false; // Initialize boolean variable to track search state
+
     function toggleSearch() {
         console.log("Toggle search function called");
         const searchContainer = document.querySelector('.search-container');
-        searchContainer.classList.toggle('active');
         const searchInput = document.getElementById('search-input');
-        if (searchContainer.classList.contains('active')) {
-            console.log("Search container is active");
-            searchInput.style.display = "block"; // Set display to block
+        
+        if (!isSearchActive) {
+            console.log("Search container is activated");
+            searchContainer.style.display = "block"; // Set display to block
             searchInput.focus();
         } else {
-            searchInput.style.display = "none"; // Set display to none when not active
+            console.log("Search container is deactivated");
+            searchContainer.style.display = "none"; // Set display to none
+            searchInput.blur();
         }
+        
+        isSearchActive = !isSearchActive; // Toggle search state
     }
+    
     
 
     const searchIcon = document.querySelector('.search-icon');
