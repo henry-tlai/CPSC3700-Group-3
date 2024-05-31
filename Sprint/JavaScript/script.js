@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!searchContainer.contains(event.target)) {
             searchContainer.classList.remove('active');
             searchInput.blur();
+            clearDropdown(); // Clear dropdown when closing search
         }
     });
 
@@ -48,6 +49,30 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.carousel-button.next').addEventListener('click', nextSlide);
     document.querySelector('.carousel-button.prev').addEventListener('click', prevSlide);
 
+    // Function to create and populate the dropdown with search results
+    function populateDropdown(results) {
+        const dropdown = document.getElementById('search-dropdown');
+        dropdown.innerHTML = ''; // Clear previous dropdown items
+        results.forEach(result => {
+            const item = document.createElement('div');
+            item.classList.add('dropdown-item');
+            item.textContent = result.item.text;
+            item.addEventListener('click', () => {
+                // Handle click on dropdown item (e.g., navigate to result URL)
+                window.location.href = result.item.url;
+            });
+            dropdown.appendChild(item);
+        });
+        dropdown.style.display = 'block'; // Show dropdown
+    }
+
+    // Function to clear the dropdown
+    function clearDropdown() {
+        const dropdown = document.getElementById('search-dropdown');
+        dropdown.innerHTML = ''; // Clear dropdown items
+        dropdown.style.display = 'none'; // Hide dropdown
+    }
+
     // Load JSON data dynamically
     fetch('../../JavaScript/mapdata.json')
         .then(response => response.json())
@@ -61,13 +86,19 @@ document.addEventListener('DOMContentLoaded', function() {
             // Function to perform fuzzy search
             function performSearch(query) {
                 const results = fuse.search(query);
-                // Implement code to display search results
-                console.log(results);
+                populateDropdown(results);
             }
 
             // Example: Perform search when input value changes
             document.getElementById('search-input').addEventListener('input', function(event) {
                 performSearch(event.target.value);
+            });
+
+            // Hide dropdown when search input is empty
+            document.getElementById('search-input').addEventListener('input', function(event) {
+                if (event.target.value.trim() === '') {
+                    clearDropdown();
+                }
             });
         })
         .catch(error => console.error('Error loading JSON data:', error));
