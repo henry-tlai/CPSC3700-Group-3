@@ -405,4 +405,8 @@ footer {
     border: 2px solid black;
     background-color: #f5ede7;
     z-index: 1000;
+    user-select:none;
+}
+.dropdown-item:hover{
+    background-color: #f5ede79f;
 }
