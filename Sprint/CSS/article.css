@@ -30,40 +30,6 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-.logo{
-    margin-right: auto;
-}
-.links{
-    display:flex;
-    justify-content: flex-end;
-}
-nav a {
-    margin-left:20px;
-    text-decoration: none;
-    color:#000000;
-}
-.star{
-    color:transparent;
-}
-.star.filled {
-    background-image: url('../HTML/reviewarticles/img/star-fill.svg'); /* Path to your SVG file for filled stars */
-}
-
-.star.half-filled {
-    background-image: url('../HTML/reviewarticles/img/star-half.svg'); /* Path to your SVG file for half-filled stars */
-}
-.star.not-filled{
-    background-image: url('../HTML/reviewarticles/img/star.svg');
-}
-a.directions-button img {
-    width: 150px;
-    height: auto;
-    display: block;
-    margin: 20px auto; /* Center the image button */
-}
-p {
-    font-size: 30px; /* Increase the font size for paragraph text */
-}
 /* Footer */
 footer {
     /*position: fixed;*/
@@ -204,4 +170,38 @@ footer {
     .footer1 .footer-center i {
         margin-left: 0;
     }
+}
+.logo{
+    margin-right: auto;
+}
+.links{
+    display:flex;
+    justify-content: flex-end;
+}
+nav a {
+    margin-left:20px;
+    text-decoration: none;
+    color:#000000;
+}
+.star{
+    color:transparent;
+}
+.star.filled {
+    background-image: url('../HTML/reviewarticles/img/star-fill.svg'); /* Path to your SVG file for filled stars */
+}
+
+.star.half-filled {
+    background-image: url('../HTML/reviewarticles/img/star-half.svg'); /* Path to your SVG file for half-filled stars */
+}
+.star.not-filled{
+    background-image: url('../HTML/reviewarticles/img/star.svg');
+}
+a.directions-button img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Center the image button */
+}
+p {
+    font-size: 30px; /* Increase the font size for paragraph text */
 }
