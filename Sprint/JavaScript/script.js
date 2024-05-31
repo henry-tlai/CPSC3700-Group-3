@@ -5,12 +5,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
 
     function toggleSearch() {
-        console.log("test");
+        console.log("toggleSearch called"); // Debugging line
         const searchContainer = document.querySelector('.search-container');
         searchContainer.classList.toggle('active');
         const searchInput = document.getElementById('search-input');
         if (searchContainer.classList.contains('active')) {
             searchInput.focus();
+        } else {
+            searchInput.blur(); // Ensure blur when search is hidden
         }
     }
 
@@ -61,18 +63,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
     function displayResults(results) {
-        const searchContainer = document.querySelector('.search-container');
+        const searchResultsContainer = document.querySelector('.search-results');
         let resultsHTML = '<ul>';
         results.forEach(result => {
             const { text, url } = result.item;
             resultsHTML += `<li><a href="${url}">${text}</a></li>`;
         });
         resultsHTML += '</ul>';
-        searchContainer.innerHTML = resultsHTML;
-        if (results.length > 0) {
-            searchContainer.classList.add('active');
-        } else {
-            searchContainer.classList.remove('active');
-        }
+        searchResultsContainer.innerHTML = resultsHTML;
     }
 });
