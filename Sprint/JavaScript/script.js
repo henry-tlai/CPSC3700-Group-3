@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
 
     function toggleSearch() {
+        console.log("test");
         const searchContainer = document.querySelector('.search-container');
         searchContainer.classList.toggle('active');
         const searchInput = document.getElementById('search-input');
