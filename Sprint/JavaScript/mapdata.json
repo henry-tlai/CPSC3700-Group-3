@@ -55,5 +55,23 @@
         "lon": "-122.17796359840558",
         "text": "Paik's Noodle",
         "url": "../reviewarticles/article9.html"
+    },
+    {
+        "lat": "47.639356782868504",
+        "lon": "-122.39765292504859",
+        "text": "Queen Margherita Pizzeria",
+        "url": "../reviewarticles/article10.html"
+    },
+    {
+        "lat": "47.6413793176184",
+        "lon": "-122.32033873117722",
+        "text": "D' La Santa",
+        "url": "../reviewarticles/article11.html"
+    },
+    {
+        "lat": "47.639553796600225",
+        "lon": "-122.40051561583311",
+        "text": "Pink Salt",
+        "url": "../reviewarticles/article12.html"
     }
 ]
