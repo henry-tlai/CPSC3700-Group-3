@@ -6,6 +6,7 @@
 	<title>Homepage</title>
 	<link rel = "stylesheet" href = "../../CSS/style.css">
 	<script src="https://kit.fontawesome.com/21c13be224.js" crossorigin="anonymous"></script>
+	<script src = "../../JavaScript/script.js"></script>
 </head> 
 <body>
 <!-----header/navbar----->
@@ -133,46 +134,6 @@
     	<p><a href="../homepage/index.html"><img src="../../img/mahi3.jpeg" width="30" height="auto" alt="Image"></a></p> <!-- Adjust the width and height attributes -->
         <p> © 2024 Bite Into Seattle. All Rights Reserved. </p>
 	</footer>
-<!--JavaScript-->
-	<script>
-		const carousel = document.querySelector('.carousel');
-		const carouselItems = document.querySelectorAll('.carousel-item');
-		const totalItems = carouselItems.length;
-		let currentIndex = 0;
-		// search
-		function toggleSearch() {
-    	const searchContainer = document.querySelector('.search-container');
-    	searchContainer.classList.toggle('active');
-    	const searchInput = document.getElementById('search-input');
-    		if (searchContainer.classList.contains('active')) {
-        		searchInput.focus();
-    		}
-		}
-
-		// Close the search input when clicking outside of it
-		document.addEventListener('click', function(event) {
-    	const searchContainer = document.querySelector('.search-container');
-    	const searchInput = document.getElementById('search-input');
-    		if (!searchContainer.contains(event.target)) {
-        		searchContainer.classList.remove('active');
-        		searchInput.blur();
-    		}
-		});
-		// review
-		function showSlide(index) {
-            		carousel.style.transform = `translateX(-${index * 100}%)`;
-        	}
-
-        	function nextSlide() {
-            	currentIndex = (currentIndex + 1) % totalItems;
-            	showSlide(currentIndex);
-        	}
-
-        	function prevSlide() {
-           		currentIndex = (currentIndex - 1 + totalItems) % totalItems;
-            	showSlide(currentIndex);
-        	}	
-	</script>
 </body>
 </html>
 </html>
