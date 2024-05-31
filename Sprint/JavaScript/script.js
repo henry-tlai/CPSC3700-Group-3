@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
             searchInput.focus();
         }
     }
-    
 
     const searchIcon = document.querySelector('.search-icon');
     console.log("Search icon found:", searchIcon);
