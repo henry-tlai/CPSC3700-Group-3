@@ -22,6 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    document.querySelector('.search-icon').addEventListener('click', toggleSearch);
+
     function showSlide(index) {
         carousel.style.transform = `translateX(-${index * 100}%)`;
     }
@@ -38,7 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector('.carousel-button.next').addEventListener('click', nextSlide);
     document.querySelector('.carousel-button.prev').addEventListener('click', prevSlide);
-    document.querySelector('.search-icon').addEventListener('click', toggleSearch);
 
     // Fetch JSON data
     fetch('../../JavaScript/mapdata.json')
