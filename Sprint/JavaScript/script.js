@@ -17,13 +17,16 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('click', function(event) {
         const searchContainer = document.querySelector('.search-container');
         const searchInput = document.getElementById('search-input');
-        if (!searchContainer.contains(event.target)) {
+        if (!searchContainer.contains(event.target) && !event.target.classList.contains('search-icon')) {
             searchContainer.classList.remove('active');
             searchInput.blur();
         }
     });
 
-    document.querySelector('.search-icon').addEventListener('click', toggleSearch);
+    document.querySelector('.search-icon').addEventListener('click', (event) => {
+        event.stopPropagation(); // Prevent the click event from propagating to the document
+        toggleSearch();
+    });
 
     function showSlide(index) {
         carousel.style.transform = `translateX(-${index * 100}%)`;
